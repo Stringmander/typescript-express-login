@@ -1,0 +1,20 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "A simple login page built using Express and Typescript",
+  "main": "index.ts",
+  "author": "Stringmander",
+  "license": "MIT",
+  "dependencies": {
+    "concurrently": "^5.3.0",
+    "nodemon": "^2.0.5"
+  },
+  "scripts": {
+    "start:build": "tsc -w",
+    "start:run": "nodemon build/index.js",
+    "start": "concurrently yarn:start:*"
+  },
+  "devDependencies": {
+    "typescript": "^4.0.3"
+  }
+}
